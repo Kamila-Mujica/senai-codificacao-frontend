@@ -4,8 +4,163 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
+<style> 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Corpo da página */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f5f5f5;
+    color: #3f171d;
+    line-height: 1.6;
+}
+
+/* Cabeçalho */
+h1 {
+    background-color: #641813d8;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Menu principal */
+nav {
+    background-color: #a02d2d;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    color: #d41e1e;
+}
+
+/* Seções */
+section {
+    width: 80%;
+    margin: 30px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 3px 8px rgba(0,0,0,.15);
+}
+
+section h2 {
+    color: #000000;
+    margin-bottom: 15px;
+}
+
+/* Tabela */
+table {
+    width: 80%;
+    margin: 30px auto;
+    border-collapse: collapse;
+    background: white;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+}
+
+caption {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #e91c1c;
+}
+
+th {
+    background-color: #b43f3fd5;
+    color: white;
+    padding: 12px;
+}
+
+td {
+    padding: 12px;
+    text-align: center;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tr:hover {
+    background-color: #dbeafe;
+}
+
+/* Formulário */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input,
+select {
+    padding: 10px;
+    border: 1px solid #af0000;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+input:focus,
+select:focus {
+    outline: none;
+    border-color: #8a2315;
+    box-shadow: 0 0 5px rgba(255, 0, 0, 0.5);
+}
+
+/* Botões */
+button {
+    width: 150px;
+    padding: 10px;
+    background-color: #e7e4e4;
+    color: rgb(167, 54, 54);
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #bbadad;
+}
+
+/* Linha horizontal */
+hr {
+    width: 80%;
+    margin: 30px auto;
+}
+
+</style>
+
 <body>
+
+
+    
     <h1>Minha Loja</h1>
     
     <nav>
@@ -73,17 +228,29 @@
 
             <form action="clientes/cadastros" method="post">
 
+                <FIEldset>
+                    <LEGENd><h2>Dados Pessoais</h2></LEGENd>
+
             <label for="nome">Nome:</label>
             <input type="text" id="nome"  name:nome placeholder="Digite seu nome" required>
             <button type=submit>Enviar</button>
+                    <br>
 
             <label for="email">E-mail:</label>
             <input type="email" id="email" name:email placeholder="Digite seu E-mail" required>
-            <button type="submit">Entrar</button>
+            <button type="submit">Enviar</button>
             
+            </FIEldset>
+
+            <fieldset>
+
+                <legend><h2>Acesso</h2></legend>
+
             <label for="senha">Senha:</label>
             <input type="password" id="senha" name:senha placeholder="Digite sua senha" required minlength="8">
             <button type="submit">Entrar</button>
+
+             </fieldset>
 
                 <br>
                 <br>
