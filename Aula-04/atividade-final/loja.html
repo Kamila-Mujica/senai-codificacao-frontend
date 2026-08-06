@@ -12,7 +12,7 @@
         <nav>
             <ul>
                 <li><a href="#produtos">Produtos</a></li>
-                <li><a href="#video">Vídeo</a></li>
+                <li><a href="#video">Video</a></li>
                 <li><a href="#contato">Contato</a></li>
                 <li><a href="#local">Local</a></li>
             </ul>
@@ -30,11 +30,128 @@
         </article>
         
             <article>
-            <h3>Tequila</h3>
-            <p>R$150,00</p>
-            <img src="https://casalisboa.com.br/wp-content/uploads/2020/07/Tequila-J.Cuervo-Ouro-375Ml.jpg" alt="Garrafa de tequila de J.Cuervo ouro de 375ML" 
-            width="350" height="500" loading="lazy">
+            <h3>Licor 43 chocolate</h3>
+            <p>R$220,00</p>
+            <img src="https://images.tcdn.com.br/img/img_prod/1306234/licor_43_chocolate_700ml_943_1_63f1f350dd40c0c81d4df39bb60848f6.jpg" alt="Garrafa em tom dourado metálico do Licor 43 Edição Limitada sabor Chocolate, com detalhes em marrom." 
+            width="450" height="500" loading="lazy">
             </article>
+
+            <article>
+                <h3>Whisky</h3>
+                <p>R$350,00</p>
+                <img src="https://casalisboa.com.br/wp-content/uploads/2020/05/Whisky-BallantineS-Finest-750Ml-616x1024.jpg" alt="Garrafa de uísque Ballantine's Finest Blended Scotch Whisky com rótulo bege e tampa clara sobre fundo branco"
+                width="250" height="500" loading="lazy">
+            </article>
+
+            <figure>
+
+                <img src="https://images.tcdn.com.br/img/img_prod/1127492/whisky_buchanan_s_master_750ml_1171_1_a190c903dffa2ad94f9a1dee3ede79e6.jpg" alt="Garrafa de whisky Buchanan's Master em vidro verde, com rótulo amarelo."
+                 width="250" height="450" loading="lazy">
+                 <figcaption> Whisky Buchanan's Master - R$1000,00</figcaption>
+
+            </figure>
+
+            <table border = 1>
+                <caption>Tabela de Preços</caption>
+
+                <thead>
+
+                    <tr>
+                        <th>Produto</th>
+                        <th>Preço</th>
+                        <th>Categoria</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>Las Patronas</td>
+                        <td>R$ 350,00</td>
+                        <td>Bebidas</td>
+                    </tr>
+
+                    <tr>
+
+                    <td>Licor 43 chocolate</td>
+                    <td>R$220,00</td>
+                    <td>Bebidas</td>
+                    </tr>
+
+                    <tr>
+                        <td>Wisky</td>
+                        <td>R$350,00</td>
+                        <td>Bebidas</td>
+                    </tr>
+                </tbody>
+            </table>
     </section>
+
+
+    <br>
+    <br>
+    <section id="video">
+        <h3>Vídeo do Produto</h3>
+        <video controls width="400" preload="metadata" title="Video do Produto" loading="lazy">
+            <source src="midia/videohack.mp4" type="video/mp4">
+        </video>
+    </section>
+
+        <section id="audio">
+            <h3>Audio do Produto</h3>
+            <audio controls preload="metadata">
+            <source src="midia/audio.mp3" type="audio/mpeg">
+            </audio>
+        </section>
+
+        <br>
+        <br>
+        <section id="Arquivo externo">
+            <h3>Video Licor 43</h3>
+            <iframe src="https://www.youtube.com/embed/qd5g3Vnu-zc?si=xyTS_M3k3dr4uGsG" frameborder="0"
+            width="350" height="350"
+            title="Video Externo"
+            loading="lazy" allowfullscreen>
+            </iframe>
+        </section>
+
+        <br>
+        <br>
+        
+        <section id="local">
+            <h3>Minha Localização</h3>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d27665.58496526698!2d-51.21734062568364!3d-29.916197999999987!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9519700872ad10e9%3A0x6f0792ac1d871519!2sConjunto%20Comercial%20Canoas!5e0!3m2!1spt-BR!2sbr!4v1786055123664!5m2!1spt-BR!2sbr" 
+            width="600" height="450" allowfullscreen loading="lazy">
+            </iframe>
+
+        </section>
+
+        <section id="contato">
+        <fieldset>
+           
+            <form action="contato/clientes" method="post">
+                <h3>Contato</h3>
+                <legend><h4>Dados Pessoais</h4></legend>
+
+                <label for="nome">Nome</label>
+                <input type="text" id="nome" name:nome placeholder="Digite seu nome" required>
+                <button type="submit">Enviar</button>
+                <br>
+
+                <label for="email"> E-mail</label>
+                <input type="email" id="email" name:email placeholder="Digite seu E-mail" required>
+                <button type="submit">Enviar</button>
+
+                </fieldset>
+
+                <fieldset>
+                <legend><h4>Mensagem</h4></legend>
+                <br>
+                    <label for="mensagem">Mensagem</label>
+                    <input type="textarea" id="mensagem" name:mensagem placeholder="Digite sua mensagem" required>
+                    <button type="submit">Enviar</button>
+                    </fieldset>
+            </form>
+        </section>
+
 </body>
 </html>
